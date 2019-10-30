@@ -1,3 +1,6 @@
+/**
+ * Node 不是单线程的
+ */
 const fs = require('fs');
 const path = require('path');
 

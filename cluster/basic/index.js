@@ -13,8 +13,7 @@ const os = require('os');
  *      * *isMaster*：判断当前进程是否为主进程，通常只需要在主进程和子进程代码在一起时用到
  * 
  *      * *setupMaster([settings])*：用于设置 fork 方法的默认配置，*唯一无法设置的是 fork 参数中的 `env` 属性*
- *          * *settings.inspectPort*：设置工作进程的调试端口。这可以是一个数字、或不带参数并返回数字的函数。*默认情况下，每个工作进程的端口都与主进程一样*，
- * 即主进程的 `process.debugPort`
+ *          * *settings.inspectPort*：设置工作进程的调试端口。这可以是一个数字、或不带参数并返回数字的函数。*默认情况下，每个工作进程的端口都与主进程一样*，即主进程的 `process.debugPort`
  * 
  *      * *fork(filepath?)*：创建 Worker 进程
  * 
